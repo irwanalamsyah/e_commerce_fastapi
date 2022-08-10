@@ -27,7 +27,7 @@ class ContohResource(Resource):
         umur = request.form["umur"]
         identitas["nama"] = nama
         identitas["umur"] = umur
-        response = {"msg": "Data success"}
+        response = {"msg": "Data success terkirim"}
         return response
 
 # setup resource
