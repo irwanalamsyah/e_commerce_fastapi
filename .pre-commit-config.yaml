@@ -1,0 +1,58 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+fail_fast: true
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: check-yaml
+    -   id: check-added-large-files
+    -   id: end-of-file-fixer
+
+
+-   repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+    - id: black
+      language_version: python3.
+
+
+-   repo: https://github.com/asottile/reorder_python_imports
+    rev: v1.9.0
+    hooks:
+        - id: reorder-python-imports
+          args: [--py3-plus]
+
+
+-   repo: http://github.com/myint/autoflake
+    rev: v2.0.0
+    hooks:
+      - id: autoflake
+        args: ['--remove-all-unused-imports']
+
+-   repo: https://github.com/dhruvmanila/remove-print-statements
+    rev: 'v0.5.0'
+    hooks:
+      - id: remove-print-statements
+        args: ['--verbose']
+
+-   repo: local
+    hooks:
+      # - id: pytest-check
+      #   name: pytest-check
+      #   entry: pytest
+
+      - stages: [ commit ]
+        types: [ python ]
+        language: system
+        pass_filenames: false
+        always_run: true
+        fail_fast: true
+
+#-   repo: "https://github.com/PyCQA/flake8"
+#    rev: 3.7.9
+#    hooks:
+#      - id: flake8
+#        additional_dependencies: [flake8-typing-imports==1.6.0]
+#        args: ["--max-line-length=89"]
