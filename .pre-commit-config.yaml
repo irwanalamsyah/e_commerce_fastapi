@@ -6,4 +6,39 @@ fail_fast: true
     hooks:
     - id: black
       language_version: python3.
-      stages: [ commit ]
+      
+
+
+
+-   repo: https://github.com/asottile/reorder_python_imports
+    rev: v1.9.0
+    hooks:
+        - id: reorder-python-imports
+          args: [--py3-plus]
+
+
+-   repo: http://github.com/myint/autoflake
+    rev: v2.0.0
+    hooks:
+      - id: autoflake
+        args: ['--remove-all-unused-imports']
+
+-   repo: https://github.com/dhruvmanila/remove-print-statements
+    rev: 'v0.5.0'
+    hooks:
+      - id: remove-print-statements
+        args: ['--verbose']
+
+-   repo: local
+    hooks:
+      # - id: pytest-check
+      #   name: pytest-check
+      #   entry: pytest
+      - stages: [ commit ]
+        types: [ python ]
+        language: system
+        pass_filenames: false
+        always_run: true
+        fail_fast: true
+
+
