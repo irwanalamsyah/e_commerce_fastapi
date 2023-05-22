@@ -5,7 +5,7 @@
 
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
 
-You can find the docs at `Documentation <a href="https://fastapi.tiangolo.com" target="_blank">https://fastapi.tiangolo.com</a>`
+You can find the docs at **Documentation**: <a href="https://fastapi.tiangolo.com" target="_blank">https://fastapi.tiangolo.com</a>
 
 ## Tortoise ORM
 
