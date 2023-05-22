@@ -14,4 +14,4 @@ Tortoise ORM is an easy-to-use ``asyncio`` ORM *(Object Relational Mapper)* insp
 Tortoise ORM was built with relations in mind and admiration for the excellent and popular Django ORM.
 It's engraved in its design that you are working not with just tables, you work with relational data.
 
-You can find the docs at `Documentation <https://tortoise.github.io>`
+You can find the docs at **Documentation**: <a href="https://tortoise.github.io" target="_blank">https://tortoise.github.io</a>
