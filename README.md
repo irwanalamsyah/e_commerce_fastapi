@@ -5,6 +5,8 @@
 
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
 
+You can find the docs at `Documentation <https://fastapi.tiangolo.com>`
+
 ## Tortoise ORM
 
 Tortoise ORM is an easy-to-use ``asyncio`` ORM *(Object Relational Mapper)* inspired by Django.
@@ -12,4 +14,4 @@ Tortoise ORM is an easy-to-use ``asyncio`` ORM *(Object Relational Mapper)* insp
 Tortoise ORM was built with relations in mind and admiration for the excellent and popular Django ORM.
 It's engraved in its design that you are working not with just tables, you work with relational data.
 
-You can find the docs at `Documentation <https://tortoise.github.io>`_
+You can find the docs at `Documentation <https://tortoise.github.io>`
