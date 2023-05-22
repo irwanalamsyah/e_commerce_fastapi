@@ -8,8 +8,6 @@ fail_fast: true
       language_version: python3.
       
 
-
-
 -   repo: https://github.com/asottile/reorder_python_imports
     rev: v1.9.0
     hooks:
